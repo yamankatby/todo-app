@@ -1,4 +1,4 @@
-import { AppAction } from '../../config/type';
+import { AppAction } from '../../config/types';
 import {
 	ActionTypes,
 	ChangeEmailAction,

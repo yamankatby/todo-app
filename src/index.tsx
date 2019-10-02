@@ -1,10 +1,16 @@
 import React from 'react';
+import { Provider } from 'react-redux';
 
-import Todo from './todos/views/Todo';
+import { store } from './config/store';
+import Register from './auth/views/Register';
+
+import 'axios-response-logger';
 
 const index = () => {
 	return (
-		<Todo />
+		<Provider store={store}>
+			<Register />
+		</Provider>
 	);
 };
 

@@ -1,6 +1,6 @@
 import { call, put, select, takeLatest } from 'redux-saga/effects';
 
-import { AppState } from '../../config/type';
+import { AppState } from '../../config/types';
 import { ActionTypes } from './types';
 
 import { login, register } from './api';

@@ -1,4 +1,4 @@
-import { AppAction, AppResultAction } from '../../config/type';
+import { AppAction, AppResultAction } from '../../config/types';
 
 export enum ActionTypes {
 	change_name = 'AUTH__CHANGE_NAME',
