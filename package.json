@@ -1,5 +1,5 @@
 {
-  "name": "RNTodoApp",
+  "name": "todo-app",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -17,11 +17,15 @@
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
+    "@types/react": "^16.9.4",
+    "@types/react-native": "^0.60.17",
     "babel-jest": "^24.9.0",
     "eslint": "^6.5.1",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.9.0"
+    "react-native-typescript-transformer": "^1.2.13",
+    "react-test-renderer": "16.9.0",
+    "typescript": "^3.6.3"
   },
   "jest": {
     "preset": "react-native"
