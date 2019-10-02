@@ -1,17 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
-import { store } from './config/store';
+import { persistor, store } from './config/store';
+
 import Register from './auth/views/Register';
 
 import 'axios-response-logger';
 
-const index = () => {
+const App = () => {
+	useEffect(() => {
+		persistor.dispatch({ type: 'persist/REHYDRATE', key: 'RNTodoApp' });
+	}, []);
+
 	return (
-		<Provider store={store}>
+		<PersistGate persistor={persistor}>
 			<Register />
-		</Provider>
+		</PersistGate>
+
 	);
 };
 
-export default index;
+export default () => {
+	return (
+		<Provider store={store}>
+			<App />
+		</Provider>
+	);
+};
