@@ -5,12 +5,12 @@ interface Props {
 
 }
 
-const App = (props: Props) => {
+const Todo = (props: Props) => {
 	return (
 		<View>
-			<Text>Hi, App Component!</Text>
+			<Text>Hi, Todo Component!</Text>
 		</View>
 	);
 };
 
-export default App;
+export default Todo;
