@@ -13,7 +13,7 @@
     "axios": "^0.19.0",
     "axios-response-logger": "^0.1.0",
     "react": "16.9.0",
-    "react-native": "0.61.1",
+    "react-native": "0.62.3",
     "react-redux": "^7.1.1",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
